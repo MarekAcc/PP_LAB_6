@@ -20,6 +20,7 @@ def divide(a: int, b: int) -> float:
     """Divide function"""
     return a / b
 
-def binary_converter(a: int) -> str:
-    return bin(a)
 
+def binary_converter(a: int) -> str:
+    """Binary converter"""
+    return bin(a)

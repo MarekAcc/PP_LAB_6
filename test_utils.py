@@ -31,7 +31,8 @@ def test_divide(a, b, expected):
     result = utils.divide(a, b)
     assert result == expected
 
-@pytest.mark.parametrize("a, expected ", [(1, '0b1'), (99, '0b1100011')])
+
+@pytest.mark.parametrize("a, expected ", [(1, "0b1"), (99, "0b1100011")])
 def test_binary_converter(a, expected):
     result = utils.binary_converter(a)
     assert result == expected
