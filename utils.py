@@ -1,4 +1,6 @@
 """Simple calculator"""
+
+
 def add(a: int, b: int) -> int:
     """Add function"""
     return a + b
