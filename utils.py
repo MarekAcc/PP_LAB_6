@@ -23,4 +23,6 @@ def divide(a: int, b: int) -> float:
 
 def binary_converter(a: int) -> str:
     """Binary converter"""
+    if not isinstance(a, int) or a < 0:
+        raise ValueError("Input must be a non-negative integer.")
     return bin(a)

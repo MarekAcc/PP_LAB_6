@@ -36,3 +36,9 @@ def test_divide(a, b, expected):
 def test_binary_converter(a, expected):
     result = utils.binary_converter(a)
     assert result == expected
+
+
+@pytest.mark.parametrize("invalid_input", [-1, None, "text"])
+def test_binary_converter_raises_value_error(invalid_input):
+    with pytest.raises(ValueError):
+        utils.binary_converter(invalid_input)
